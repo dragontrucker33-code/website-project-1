@@ -35,15 +35,16 @@
     <main>
       <section id="about">
         <h2>About</h2>
+        <div class="row">
         <div class="section__description">
           <div class="section__description--wrapper">
-            <p class="section__description--para">
+            <p class="section__description--paragraph">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
               doloribus nobis tempora repellat quidem! Assumenda dignissimos
               repellat aut voluptatibus eveniet dolorem nemo asperiores ullam,
               numquam nisi ab? Dolorem, debitis rerum?
             </p>
-            <p class="section__description--para">
+            <p class="section__description--paragraph">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
               doloribus nobis tempora repellat quidem! Assumenda dignissimos
               repellat aut voluptatibus eveniet dolorem nemo asperiores ullam,
@@ -54,20 +55,23 @@
             <img src="./Assets/about.jpg" alt"">
           </figure>
         </div>
+        </div>
       </section>
       <section id="discord">
         <h2>discord</h2>
-        <figure>
+        <div class="row">
+        <div class="section__description">
+        <figure class="about__img--wrapper">
           <img src="./Assets/discord.png" alt="" />
         </figure>
-        <div>
-          <p>
+        <div class="section__description--wrapper">
+          <p class="section__description--paragraph">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Doloremque, repellat. Quisquam corrupti quod, beatae repellendus
             aliquid ab distinctio animi. Aspernatur delectus dolores in quisquam
             quam temporibus qui adipisci consectetur quaerat!
           </p>
-          <p>
+          <p class="section__description--paragraph">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Doloremque, repellat. Quisquam corrupti quod, beatae repellendus
             aliquid ab distinctio animi. Aspernatur delectus dolores in quisquam
@@ -80,24 +84,27 @@
             quam temporibus qui adipisci consectetur quaerat!
           </p>
         </div>
+        </div>
+        </div>
       </section>
       <section id="contact">
         <h2>contact</h2>
         <form action="">
           <span>email</span>
-          <input type="text" placeholder="paul@example.com" />
+          <input type="email" placeholder="paul@example.com" />
           <span>message</span>
           <textarea type="text" placeholder="paul@example.com"></textarea>
+          <button>contact us</button>
         </form>
       </section>
     </main>
     <footer>
-      <img src="./HTML Practise Assets/HTML Practise Assets/FES.svg" alt="" />
-      <div>
-        <a href="about">about</a>
-        <a href="discord">discord</a>
-        <a href="contact">contact</a>
-        <a href="">courses</a>
+      <img class="footer__logo" src="./Assets/FES.svg" alt="" />
+      <div class="footer__links">
+        <a class="footer__link" href="about">about</a>
+        <a class="footer__link" href="discord">discord</a>
+        <a class="footer__link" href="contact">contact</a>
+        <a class="footer__link" href="">courses</a>
       </div>
       <p>copyright frontend simplified</p>
     </footer>
